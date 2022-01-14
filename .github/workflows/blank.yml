@@ -27,7 +27,7 @@ jobs:
        - name: Cloning Repo
          continue-on-error: true
          run: |
-           git clone https://miniloona:${{ secrets.GH_TOKEN }}@miniloona/creds CREDS
+           git clone https://miniloona:${{ secrets.GH_TOKEN }}@github.com/miniloona/creds CREDS
        - name: Running Userbot
          timeout-minutes: 350
          continue-on-error: true
